@@ -492,7 +492,7 @@ a:hover {
   height:100%;
   border: 1px 
   solid #FFF;
-
+  overflow: hidden;
 }
 
 .logo {
@@ -684,7 +684,6 @@ a:hover {
   position:absolute;
   right: 0;
   bottom: 0;
-  overflow: hidden;
   -webkit-transform: translate(50%, 50%) rotate(-45deg);
       -ms-transform: translate(50%, 50%) rotate(-45deg);
           transform: translate(50%, 50%) rotate(-45deg);
