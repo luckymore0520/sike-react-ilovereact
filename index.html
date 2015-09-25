@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bundle/app.css">
     <script type="text/javascript" src="js/gsap/src/uncompressed/TweenMax.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <!-- 强制 IE 遵循现代标准 -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -24,7 +25,7 @@
 </head>
 <body>
 <!-- <script src="js/app.js"></script> -->
-    <div class="section one">
+    <div id="intro-section" class="section one">
         <div class="logo" >
             <div id="react-logo">
              <img src="img/react-logo.svg"/>
@@ -50,7 +51,7 @@
         </div>
         <div class="overlay"></div>
     </div>
-    <div class="section two">
+    <div id="native" class="section two">
         <div class="iphone-demo">
             <div class = "iphone-frame">
                 <img src="img/iphone-frame.svg"/>
@@ -69,7 +70,7 @@
               </p>      
         </div>
     </div>
-    <div class="section three">
+    <div id="touch" class="section three">
         <div class="iphone-demo">
             <div class = "iphone-frame">
                  <img src="img/iphone-frame.svg"/>
@@ -87,25 +88,25 @@
               </p>     
         </div>
     </div>
-    <div class="section four">
+    <div id="android" class="section four">
         <h1>Android Is Here</h1>
         <img id="android-robot" src="img/android-robot.svg"/> 
     </div>
 
     <div id="slider-control">
-      <a href="#native" class="active">
+      <a target="#intro-section" class="active">
         <div class="dot"></div>
       </a>
 
-      <a href="#touch">
+      <a target="#native">
         <div class="dot"></div>
       </a>
 
-      <a href="#async">
+      <a target="#touch">
         <div class="dot"></div>
       </a>
 
-      <a href="#flex">
+      <a target="#android">
         <div class="dot"></div>
       </a>
     </div>

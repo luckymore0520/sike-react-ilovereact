@@ -490,8 +490,6 @@ a:hover {
 
 .section {
   height:100%;
-  border: 1px 
-  solid #FFF;
   overflow: hidden;
 }
 
@@ -606,9 +604,10 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
 
-  background-color: rgba(255,0,0,0.3);
   -webkit-align-self: stretch;
+
       -ms-flex-item-align: stretch;
+
           align-self: stretch;
   -webkit-box-flex:1;
   -webkit-flex-grow:1;
@@ -649,7 +648,6 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0,255,0,0.3);
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
